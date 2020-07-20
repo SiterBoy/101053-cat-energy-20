@@ -2,47 +2,59 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин Кэт энерджи</title>
   </head>
   <body class="page-body">
+
     <header class="page-header">
       <div class="page-header_wrapper">
-        <a href="" class="page-header__logo">
+        <a href="/" class="page-header__logo">
           <img src="img/logoimg.png" alt="Логотип компании" width="34" height="38">
-        </a>
-        <a href="#" class="page-header__textlogo text-logo">
           <img src="img/logotext.png" alt="Текстовый логотип компании" width="101" height="18">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
+          <ul class="main-nav__list visually-hidden">
+            <li class="main-nav__item">
+              <a href="/" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/catalog.html" class="main-nav__link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/form.html" class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
      </div>
     </header>
 
     <main class="page-main">
-      <section class="info">
-        <div class="info__wrapper">
-          <h1 class="info__title">Функциональное питание для котов</h1>
-          <div class="info__intro">Занялся собой? Займись котом!</div>
-          <img src="img/product.png" alt="" width="280" height="270">
-          <button class="info__button button button-green">подобрать программу</button>
+      <section class="top-product-presentation">
+        <div class="top-product-presentation__wrapper">
+          <h1 class="top-product-presentation__title">Функциональное питание для котов</h1>
+          <div class="top-product-presentation__intro">Занялся собой? Займись котом!</div>
+          <img class="top-product-presentation__img" src="img/product.png" alt="" width="280" height="270">
+          <a href="/form.html" class="top-product-presentation__button button button-green">подобрать программу</a>
       </div>
       </section>
 
-      <section class="types">
-        <div class="types__wrapper">
+      <section class="product-types">
+        <div class="product-types__wrapper">
           <h2 class="visually-hidden">Типы нашего питания</h2>
-          <ul class="types__list">
-            <li class="types__item types__item--slim">
-              <h3 class="types__title">Похудение</h3>
-              <p class="types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="#" class="types__link button">каталог slim</a>
+          <ul class="product-types__list">
+            <li class="product-types__item product-types__item--slim">
+              <h3 class="product-types__title">Похудение</h3>
+              <p class="product-types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="#" class="product-types__link button">каталог slim</a>
             </li>
-            <li class="types__item types__item--pro">
-              <h3 class="types__title">Набор массы</h3>
-              <p class="types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="#" class="types__link button">каталог pro</a>
+            <li class="product-types__item product-types__item--pro">
+              <h3 class="product-types__title">Набор массы</h3>
+              <p class="product-types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="#" class="product-types__link button">каталог pro</a>
             </li>
           </ul>
       </div>
@@ -62,27 +74,31 @@
     </main>
 
     <footer class="page-footer">
-      <a href="#" class="page-footer__textlogo text-logo">
+      <a href="/" class="page-footer__text-logo text-logo">
         <img src="img/logotext.png" alt="Текстовый логотип компании" width="101" height="18">
       </a>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--inst"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--fb"></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--vk">
+            <span class="visually-hidden">Группа вконакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--inst">
+            <span class="visually-hidden">Профиль в инстаграм</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--fb">
+            <span class="visually-hidden">Группа в Facebook</span>
+          </a>
+        </li>
+      </ul>
 
       <div class="page-footer__copyright copyright">
-        <a href="#" class="copyright__textlink">HTML Academy</a>
-        <a href="#" class="copyright__imglink">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text-link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img-link">
           <img src="img/htmlacademylogo.png" alt="Логотип HtmlAcademy" class="copyright__img" width="27" height="34">
         </a>
       </div>
