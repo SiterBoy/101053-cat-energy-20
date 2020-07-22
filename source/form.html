@@ -9,7 +9,7 @@
 
     <header class="page-header">
       <div class="page-header_wrapper">
-        <a href="/" class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <img src="img/logoimg.png" alt="Логотип компании" width="34" height="38">
           <img src="img/logotext.png" alt="Текстовый логотип компании" width="101" height="18">
         </a>
@@ -19,21 +19,83 @@
           </button>
           <ul class="main-nav__list visually-hidden">
             <li class="main-nav__item">
-              <a href="/" class="main-nav__link">Главная</a>
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="/catalog.html" class="main-nav__link">Каталог продукции</a>
+              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="/form.html" class="main-nav__link">Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
     </div>
     </header>
 
+    <main class="page-main">
+      <section class="selection-nutrition">
+        <div class="selection-nutrition__wrapper">
+          <h1 class="selection-nutrition__title">Подбор программы</h1>
+          <p class="selection-nutrition__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form action="https://echo.htmlacademy.ru" method="POST" class="selection-nutrition__form order-form">
+            <div class="order-form__about-cat">
+              <label for="cat-name" class="order-form__label">ИМЯ:*</label>
+              <input type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
+              <label for="cat-weight" class="order-form__label">Вес (кг):*</label>
+              <input type="number" min="0" name="cat-weight" id="cat-weight" placeholder="7" required>
+              <label for="cat-age" class="order-form__label">Возраст (лет):</label>
+              <input type="number" min="0" name="cat-age" id="cat-age" placeholder="7">
+            </div>
+            <div class="order-form__motivation">
+              <input type="radio" id="motivation-choise1" name="motivation" value="похудение" checked>
+              <label for="motivation-choise1" class="order-form__motivation-label">похудение</label>
+              <input type="radio" id="motivation-choise2" name="motivation" value="набор массы">
+              <label for="motivation-choise2" class="order-form__motivation-label">набор массы</label>
+              <input type="radio" id="motivation-сhoise3" name="motivation" value="Не знаю (Нужен ваш совет)">
+              <label for="motivation-сhoise3" class="order-form__motivation-label">Не знаю (Нужен ваш совет)</label>
+            </div>
+            <h3 class="order-form__title">Контактные данные (владельца кота)</h3>
+            <div class="order-form__about-client">
+              <label for="client-name" class="order-form__label">E-mail:*</label>
+              <input type="email" class="order-form__input" name="client-name" id="client-name" placeholder="kuklachev@gmail.com" required>
+              <label for="clientPhone" class="order-form__label">Телефон:*</label>
+              <input type="phone" class="order-form__input" name="client-phone" id="client-phone" placeholder="8 (960) 900-60-90" required>
+            </div>
+            <h3 class="order-form__title">Комментарий</h3>
+            <div class="order-form__comment">
+              <textarea class="order-form__textarea" name="aboutcat" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+            <h3 class="order-form__title">Дополнительно</h3>
+            <div class="order-form__extra">
+              <input type="checkbox" name="extra-sugar" id="add1" value="сахарозаменитель">
+              <label for="add1" class="order-form__laber-extra">сахарозаменитель</label>
+              <input type="checkbox" name="extra-water" id="add2" value="питьевая вода">
+              <label for="add2" class="order-form__laber-extra">питьевая вода</label>
+              <input type="checkbox" name="extra-milk" id="add3" value="молоко">
+              <label for="add3" class="order-form__laber-extra">молоко</label>
+              <input type="checkbox" name="extra-vitamins" id="add4" value="витамины">
+              <label for="add4" class="order-form__laber-extra">витамины</label>
+            </div>
+            <button type="submit" class="order-form__button button button--green">отправить заявку</button>
+            <p class="order-form-required-text">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1488c10158a0918822011f8bbb632ebba70761b17ed90e41a0139c8e73380b54&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
+        </div>
+      </section>
+
+    </main>
+
     <footer class="page-footer">
-      <a href="/" class="page-footer__text-logo text-logo">
+      <a href="index.html" class="page-footer__text-logo text-logo">
         <img src="img/logotext.png" alt="Текстовый логотип компании" width="101" height="18">
       </a>
 
